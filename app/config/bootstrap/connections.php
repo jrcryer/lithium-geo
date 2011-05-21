@@ -67,5 +67,10 @@ use lithium\data\Connections;
 // 	'password' => '',
 // 	'database' => 'my_app'
 // ));
+Connections::add('default', array(
+    'type' =>  'MongoDb',
+    'database' => 'store',
+    'host' => 'localhost'
+));
 
 ?>
