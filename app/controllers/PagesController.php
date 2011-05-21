@@ -26,7 +26,7 @@ namespace app\controllers;
 class PagesController extends \lithium\action\Controller {
 
 	public function view() {
-		$path = func_get_args() ?: array('home');
+		$path = func_get_args() ?: array('index');
 		$this->render(array('template' => join('/', $path)));
 	}
 }

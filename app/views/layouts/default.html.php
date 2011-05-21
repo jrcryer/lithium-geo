@@ -10,7 +10,7 @@
 <html>
 <head>
 	<?php echo $this->html->charset();?>
-	<title>Store locator<?php echo $this->title(); ?></title>
+	<title><?php echo $this->title(); ?></title>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
         <?php echo $this->html->style(array('debug', 'main')); ?>
@@ -20,16 +20,7 @@
 </head>
 <body class="app">
     <div data-role="page">
-        <header data-role="header">
-            <h1>Store locator</h1>
-        </header>
-        <section data-role="content">
-            <?php $this->content() ?>
-        </section>
-        <footer data-role="footer">
-            <h4>Store &copy;</h4>
-        </footer>
+        <?php echo $this->content(); ?>
     </div>
-    <?php echo $this->content(); ?>
 </body>
 </html>
