@@ -1,7 +1,7 @@
 <?php
     echo $this->view()->render(
         array('element' => 'header'),
-        array('back' => '/', 'title' => 'Find a showroom')
+        array('back' => '/', 'title' => 'Search')
     );
 ?>
 <section data-role="content">
@@ -12,3 +12,6 @@
         </div>
     </form>
 </section>
+<?php echo $this->view()->render(
+    array('element' => 'footer')
+); ?>
