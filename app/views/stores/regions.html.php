@@ -1,5 +1,4 @@
-<?php
-    echo $this->view()->render(
+<?= $this->view()->render(
         array('element' => 'header'),
         array('back' => '/', 'title' => 'Regions')
     );
@@ -8,12 +7,12 @@
     <ul data-role="listview" data-inset="true">
         <?php foreach($regions as $region) { ?>
         <li>
-            <?= $this->html->link($region->name, "/stores/regions/{$region->name}"); ?>
+            <?= $this->html->link($region->name, "../stores/region/{$region->name}"); ?>
             <span class="ui-li-count"><?php echo $region->count; ?> showrooms</span>
         </li>
         <?php } ?>
     </ul>
 </section>
-<?php echo $this->view()->render(
+<?= $this->view()->render(
     array('element' => 'footer')
 ); ?>

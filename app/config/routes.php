@@ -28,7 +28,8 @@ Router::connect('/pages/{:args}', 'Pages::view');
 /**
  * Stores routes
  */
-Router::connect('/stores/regions/{:id}', 'Stores::region');
+Router::connect('/stores/regionsregion/{:id}', 'Stores::region');
+Router::connect('/stores/region/{:id}', 'Stores::region');
 Router::connect('/store/{:id}', 'Stores::show');
 
 /**
