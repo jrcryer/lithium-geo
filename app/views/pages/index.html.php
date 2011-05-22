@@ -11,7 +11,7 @@
 
     </ul>
     <ul data-role="listview" data-inset="true">
-        <li><?php echo $this->html->link('Map', '/stores/map') ?></li>
+        <li><?php echo $this->html->link('Map', '/pages/map') ?></li>
     </ul>
     <ul data-role="listview" data-inset="true">
         <li><?php echo $this->html->link('Browse by region', '/stores/regions') ?></li>
