@@ -26,6 +26,12 @@ Router::connect('/', 'Pages::view');
 Router::connect('/pages/{:args}', 'Pages::view');
 
 /**
+ * Stores routes
+ */
+Router::connect('/stores/regions/{:id}', 'Stores::region');
+Router::connect('/store/{:id}', 'Stores::show');
+
+/**
  * Connect the testing routes.
  */
 if (!Environment::is('production')) {
